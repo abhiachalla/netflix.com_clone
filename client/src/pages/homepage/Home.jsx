@@ -8,6 +8,7 @@ import axios from "axios";
 
 
 const Home = ({type}) => {
+  console.log("entered home")
 
 
     const [lists, setlists] = useState([]);

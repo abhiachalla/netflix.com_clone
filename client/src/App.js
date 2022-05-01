@@ -3,6 +3,7 @@ import Home from "./pages/homepage/Home.jsx";
 import Watch from "./pages/watch/watch.jsx";
 import Register from "./pages/register/register.jsx";
 import Login from "./pages/login/login.jsx";
+import Anonymous from "./pages/anonymous/anonymous.jsx"
 import {
     BrowserRouter as Router,
     Switch,
@@ -32,6 +33,12 @@ const App = () => {
                 <Route path = "/register">
                    {!user ? <Register/> : <Redirect to="/"/>} 
                 </Route>
+
+                <Route path = "/anonymous">
+                   <Anonymous/> 
+                </Route>
+
+                
 
                 <Route path = "/login">
                 {!user ? <Login/> : <Redirect to="/"/>} 
